@@ -1,12 +1,13 @@
 {
-  "name": "my-angular-app",
+  "name": "angular-task",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "server": "json-server --watch db.json --port 5300"
   },
   "private": true,
   "dependencies": {
@@ -18,13 +19,18 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "@fortawesome/angular-fontawesome": "^0.12.1",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "bootstrap": "^5.3.3",
+    "json-server": "^0.17.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^15.2.0",
-    "@angular/cli": "~15.2.0",
+    "@angular-devkit/build-angular": "^15.2.4",
+    "@angular/cli": "~15.2.4",
     "@angular/compiler-cli": "^15.2.0",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.5.0",
